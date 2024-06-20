@@ -11,11 +11,11 @@ documentation = "https://github.com/dotansimha/graphql-tools-rs"
 authors = ["Dotan Simha <dotansimha@gmail.com>"]
 
 [dependencies]
-graphql-parser = "^0.4.0"
+graphql-parser = { git = 'https://github.com/sodiumjoe/graphql-parser', branch = "serde", features=["serde"] }
 lazy_static = "1.4.0"
-serde = { version = "1.0", features = ["derive"] }
+serde = { version = "1.0.163", features = ["derive"] }
 serde_json = "1.0"
 serde_with = "2.2.0"
 
 [dev-dependencies]
-graphql-parser = "0.4.0"
+graphql-parser = { git = 'https://github.com/sodiumjoe/graphql-parser', branch = "serde", features=["serde"] }
